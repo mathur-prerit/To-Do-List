@@ -3,6 +3,8 @@ body{
     flex-flow: column wrap;
     justify-content:center;
     align-items:center;
+    /* background-color: chocolate; */
+    font-size: 2rem;
 }
 
 .items-list{
