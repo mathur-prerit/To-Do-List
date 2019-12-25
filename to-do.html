@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="to-do-styling.css" />
+  </head>
+  <body>
+    
+    <h1 class="head">To Do List</h1>
+    
+    <div class=all-elements>
+      <form id="insert-item" class="insert-form">
+        <input id="item" class="add-item-bar" type="text" placeholder="enter item" />
+        <button class="add-item-button" type="submit" value="submit">Add</button>
+      </form>
+      
+      <h2>Items</h2>
+      <ul id="items" class="items-list">
+      </ul>
+    </div>
+    <script src="./to-do-backend.js"></script>
+  </body>
+</html>
