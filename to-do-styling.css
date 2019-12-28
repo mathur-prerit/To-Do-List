@@ -1,13 +1,107 @@
 body{
     display:flex;
-    flex-flow: column wrap;
+    flex-flow: column; 
     justify-content:center;
     align-items:center;
-    /* background-color: chocolate; */
+    background-color:wheat;
     font-size: 2rem;
 }
 
 .items-list{
 list-style-type:none;
 border:1px solid black;
+min-width: 60%;
+height: 39rem;
+overflow-y: auto;
+}
+
+.head{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    color: transparent;
+}
+
+.item-list{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid white;
+    background-color: darkorange;
+}
+
+.item-list:hover{
+    background-color: deeppink;
+}
+
+.delete-item{
+    padding:3%;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color:transparent
+}
+
+.delete-item:hover{
+    background-color: cornflowerblue;
+    /* background-repeat:no-repeat; */
+    border: 1px solid black;
+    border-radius: 35px;
+    cursor:pointer;
+    /* overflow: hidden; */
+    /* outline:none; */
+    color:black;
+}
+
+.item-checkbox:checked::before{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 13.66667px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.item-checkbox:checked::after{
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #40e0d0;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.add-item-bar{
+border-radius: 35px;
+border:1px solid black;
+padding:5%;
+}
+
+.add-item-button{
+    color: #20bf6b !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #20bf6b !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.add-item-button:hover{
+    color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+}
+
+.insert-form{
+    display:flex;
+    justify-content: center;
 }
