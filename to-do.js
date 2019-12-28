@@ -3,7 +3,11 @@ document.title = "To-Do List";
 const theItem = document.getElementById("insert-item");
 const itemsList = document.getElementById("items");
 let localData = JSON.parse(localStorage.getItem("items"));
-// console.log(localData)
+
+if(localData===null){
+  localData=[]
+  localStorage.setItem("items", JSON.stringify(localData));
+}
 
 let index=0;
 

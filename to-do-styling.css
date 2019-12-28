@@ -16,7 +16,8 @@ overflow-y: auto;
 }
 
 .head{
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
     color: transparent;
 }
 
@@ -53,28 +54,6 @@ overflow-y: auto;
     /* overflow: hidden; */
     /* outline:none; */
     color:black;
-}
-
-.item-checkbox:checked::before{
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    content: '✔';
-    display: inline-block;
-    font-size: 13.66667px;
-    text-align: center;
-    line-height: 20px;
-}
-
-.item-checkbox:checked::after{
-    -webkit-animation: click-wave 0.65s;
-    -moz-animation: click-wave 0.65s;
-    animation: click-wave 0.65s;
-    background: #40e0d0;
-    content: '';
-    display: block;
-    position: relative;
-    z-index: 100;
 }
 
 .add-item-bar{
