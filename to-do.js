@@ -96,7 +96,7 @@ function addItem(obj) {
     const deletingItem=obj.target.parentNode.attributes.position.value;
     localData.splice(deletingItem,1);
     updateData();
-    alert("Item Deleted");
+//     alert("Item Deleted");
   }
 
   //Check uncheck items
